@@ -1,0 +1,312 @@
+@font-face {
+    font-family: 'LatoThin';
+    src: url('./public/fonts/Lato-Thin.ttf')
+}
+
+:root {
+    --container-width: 1440px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'LatoThin', sans-serif;
+    font-weight: 300;
+}
+
+.hero {
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+  }
+  
+  .hero__image {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hero__content {
+    margin-top: -50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero__title {
+    width: fit-content;
+    text-align:left;
+    font-size: 64px;
+    color: white;
+  }
+
+
+*,:after,:before {
+    box-sizing: border-box;
+    margin: 0;
+    outline: 0 solid;
+    padding: 0;
+}
+
+@media (max-width: 610px) {
+    :root {
+        --total-columns:4;
+        --grid-gutter: 24px;
+        --container-padding: 24px
+    }
+}
+
+@media (min-width: 611px) and (max-width:1190px) {
+    :root {
+        --total-columns:8;
+        --grid-gutter: 24px;
+        --container-padding: 32px
+    }
+}
+
+@media (min-width: 1191px) {
+    :root {
+        --total-columns:12;
+        --grid-gutter: 40px;
+        --container-padding: 40px
+    }
+}
+
+.o-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-left: calc(var(--container-padding) - var(--grid-gutter)/2);
+    padding-right: calc(var(--container-padding) - var(--grid-gutter)/2);
+    width: calc(var(--container-width) + var(--container-padding)*2)
+}
+
+.o-container--full {
+    width: 100%
+}
+
+
+@media (min-width: 1191px) {
+    .o-col-1\@lg {
+        width:calc((100%/var(--total-columns))*1)
+    }
+
+    .o-col-push-1\@lg {
+        margin-left: calc((100%/var(--total-columns))*1)
+    }
+
+    .o-col-2\@lg {
+        width: calc((100%/var(--total-columns))*2)
+    }
+
+    .o-col-push-2\@lg {
+        margin-left: calc((100%/var(--total-columns))*2)
+    }
+
+    .o-col-3\@lg {
+        width: calc((100%/var(--total-columns))*3)
+    }
+
+    .o-col-push-3\@lg {
+        margin-left: calc((100%/var(--total-columns))*3)
+    }
+
+    .o-col-4\@lg {
+        width: calc((100%/var(--total-columns))*4)
+    }
+
+    .o-col-push-4\@lg {
+        margin-left: calc((100%/var(--total-columns))*4)
+    }
+
+    .o-col-5\@lg {
+        width: calc((100%/var(--total-columns))*5)
+    }
+
+    .o-col-push-5\@lg {
+        margin-left: calc((100%/var(--total-columns))*5)
+    }
+
+    .o-col-6\@lg {
+        width: calc((100%/var(--total-columns))*6)
+    }
+
+    .o-col-push-6\@lg {
+        margin-left: calc((100%/var(--total-columns))*6)
+    }
+
+    .o-col-7\@lg {
+        width: calc((100%/var(--total-columns))*7)
+    }
+
+    .o-col-push-7\@lg {
+        margin-left: calc((100%/var(--total-columns))*7)
+    }
+
+    .o-col-8\@lg {
+        width: calc((100%/var(--total-columns))*8)
+    }
+
+    .o-col-push-8\@lg {
+        margin-left: calc((100%/var(--total-columns))*8)
+    }
+
+    .o-col-9\@lg {
+        width: calc((100%/var(--total-columns))*9)
+    }
+
+    .o-col-push-9\@lg {
+        margin-left: calc((100%/var(--total-columns))*9)
+    }
+
+    .o-col-10\@lg {
+        width: calc((100%/var(--total-columns))*10)
+    }
+
+    .o-col-push-10\@lg {
+        margin-left: calc((100%/var(--total-columns))*10)
+    }
+
+    .o-col-11\@lg {
+        width: calc((100%/var(--total-columns))*11)
+    }
+
+    .o-col-push-11\@lg {
+        margin-left: calc((100%/var(--total-columns))*11)
+    }
+
+    .o-col-12\@lg {
+        width: calc((100%/var(--total-columns))*12)
+    }
+
+    .o-col-push-12\@lg {
+        margin-left: calc((100%/var(--total-columns))*12)
+    }
+}
+
+@media (min-width: 611px) and (max-width:1190px) {
+    .hero__title{
+        font-size: 48px;
+    }
+
+    .o-col-1\@md {
+        width:calc((100%/var(--total-columns))*1)
+    }
+
+    .o-col-push-1\@md {
+        margin-left: calc((100%/var(--total-columns))*1)
+    }
+
+    .o-col-2\@md {
+        width: calc((100%/var(--total-columns))*2)
+    }
+
+    .o-col-push-2\@md {
+        margin-left: calc((100%/var(--total-columns))*2)
+    }
+
+    .o-col-3\@md {
+        width: calc((100%/var(--total-columns))*3)
+    }
+
+    .o-col-push-3\@md {
+        margin-left: calc((100%/var(--total-columns))*3)
+    }
+
+    .o-col-4\@md {
+        width: calc((100%/var(--total-columns))*4)
+    }
+
+    .o-col-push-4\@md {
+        margin-left: calc((100%/var(--total-columns))*4)
+    }
+
+    .o-col-5\@md {
+        width: calc((100%/var(--total-columns))*5)
+    }
+
+    .o-col-push-5\@md {
+        margin-left: calc((100%/var(--total-columns))*5)
+    }
+
+    .o-col-6\@md {
+        width: calc((100%/var(--total-columns))*6)
+    }
+
+    .o-col-push-6\@md {
+        margin-left: calc((100%/var(--total-columns))*6)
+    }
+
+    .o-col-7\@md {
+        width: calc((100%/var(--total-columns))*7)
+    }
+
+    .o-col-push-7\@md {
+        margin-left: calc((100%/var(--total-columns))*7)
+    }
+
+    .o-col-8\@md {
+        width: calc((100%/var(--total-columns))*8)
+    }
+
+    .o-col-push-8\@md {
+        margin-left: calc((100%/var(--total-columns))*8)
+    }
+}
+
+@media (max-width: 610px) {
+    .hero__content{
+        padding: 10px;
+    }
+
+    .hero__title{
+        font-size: 32px;
+    }
+
+    .o-col-1\@sm {
+        width:calc((100%/var(--total-columns))*1)
+    }
+
+    .o-col-push-1\@sm {
+        margin-left: calc((100%/var(--total-columns))*1)
+    }
+
+    .o-col-2\@sm {
+        width: calc((100%/var(--total-columns))*2)
+    }
+
+    .o-col-push-2\@sm {
+        margin-left: calc((100%/var(--total-columns))*2)
+    }
+
+    .o-col-3\@sm {
+        width: calc((100%/var(--total-columns))*3)
+    }
+
+    .o-col-push-3\@sm {
+        margin-left: calc((100%/var(--total-columns))*3)
+    }
+
+    .o-col-4\@sm {
+        width: calc((100%/var(--total-columns))*4)
+    }
+
+    .o-col-push-4\@sm {
+        margin-left: calc((100%/var(--total-columns))*4)
+    }
+}
