@@ -48,6 +48,7 @@ body{
   }
   
   .hero__title {
+    line-height: 76.8px;
     width: fit-content;
     text-align:left;
     font-size: 64px;
@@ -202,6 +203,7 @@ body{
 @media (min-width: 611px) and (max-width:1190px) {
     .hero__title{
         font-size: 48px;
+        line-height: 57.6px;
     }
 
     .o-col-1\@md {
@@ -271,11 +273,12 @@ body{
 
 @media (max-width: 610px) {
     .hero__content{
-        padding: 10px;
+        padding-left: 30px;
     }
 
     .hero__title{
         font-size: 32px;
+        line-height: 38.4px;
     }
 
     .o-col-1\@sm {
